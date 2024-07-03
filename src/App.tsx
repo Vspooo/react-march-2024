@@ -1,13 +1,17 @@
 import React from 'react';
 import './App.css';
-import UsersComponent from "./components/usersComponent";
+import ToggleComponent from "./hooks/useToogle";
+import UsePrevious from "./hooks/usePrevious";
 
 
 
 
 const App = () => {
   return (
-      <UsersComponent/>
+  <div>
+    <ToggleComponent value={true}/>
+    <UsePrevious/>
+  </div>
   )
 }
 
